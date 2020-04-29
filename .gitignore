@@ -1,0 +1,4 @@
+#Ignore Aws
+.aws
+#Ingore 
+node_modules
