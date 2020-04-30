@@ -1,6 +1,3 @@
-
-
-
 const AWS= require('aws-sdk');
 
 exports.handler = async (event,context) => {
@@ -26,7 +23,7 @@ exports.handler = async (event,context) => {
         let params = {
                 Message :  JSON.parse(data.Body.toString('utf-8')).results.transcripts[0].transcript,
                 Subject :  record.s3.object.key,
-                TopicArn : "arn:aws:sns:us-west-1:903511445246:Transcribe-Text-Business-Group"
+                TopicArn : "arn:aws:sns:::Topic"
             };
         console.log(params);
         
