@@ -1,4 +1,4 @@
 #Ignore Aws
-.aws
+AWS_Lambdas/*.aws
 #Ingore 
 node_modules
